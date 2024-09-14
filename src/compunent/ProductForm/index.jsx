@@ -12,7 +12,7 @@ const ProductForm = () => {
   const [stock, setStock] = useState("");
   const [rating, setRating] = useState("");
   const navigate = useNavigate();
-
+  
   const handleSubmit = (e) => {
     e.preventDefault();
     // Create a product object

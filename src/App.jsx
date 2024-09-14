@@ -8,6 +8,8 @@ import ProductForm from "./compunent/ProductForm";
 import AllProductList from "./compunent/AllProductList";
 import AllProductGrid from "./compunent/AllProductGrid";
  import CategoryList from "./compunent/Category/CategoryList";
+import Create from "./compunent/Invoices/Create";
+import CreateList from "./compunent/Invoices/CreateList";
 const App = () => {
   return (
     <ProductContextItemProvider>
@@ -18,6 +20,8 @@ const App = () => {
           <Route path="/productitem-list" element={<AllProductList />} />
           <Route path="/product-Grid" element={<AllProductGrid />} />
           <Route path="/category-List" element={<CategoryList />} />
+          <Route path="/create" element={<Create/>} />
+          <Route path="/invoice/list" element={<CreateList/>} />
         </Route>
       </Routes>
     </ProductContextItemProvider>

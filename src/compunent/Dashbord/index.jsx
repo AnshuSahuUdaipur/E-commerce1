@@ -1,6 +1,6 @@
 import React from 'react';
 // import ProductForm from '../ProductForm';
-
+import CreateList from '../Invoices/CreateList';
 const Dashbord = () => {
 
   return (
@@ -464,6 +464,7 @@ const Dashbord = () => {
         </tbody>
       </table>
     </div>
+
     </div>
   );
 };

@@ -83,19 +83,19 @@ const SideNav = () => {
             fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
             <path fillRule="evenodd" d="M5 2a1 1 0 00-1 1v14a1 1 0 001 1h10a1 1 0 001-1V3a1 1 0 00-1-1H5zm1 14V4h10v12H6z" clipRule="evenodd"></path>
           </svg>
-          <span className="flex-1 ml-3 text-left whitespace-nowrap">Inventory</span>
+          <span className="flex-1 ml-3 text-left whitespace-nowrap">Invioce</span>
           <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
             <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd"></path>
           </svg>
         </button>
         <ul id="dropdown-reports" className="hidden py-2 space-y-2">
           <li>
-            <Link to="/sales-report"
-              className="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-11">Werehouse</Link>
+            <Link to="/invoice/list"
+              className="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-11">List</Link>
           </li>
           <li>
-            <Link to="/inventory-report"
-              className="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-11">Reaceved Order</Link>
+            <Link to="/create"
+              className="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-11">Create</Link>
           </li>
 
         </ul>
