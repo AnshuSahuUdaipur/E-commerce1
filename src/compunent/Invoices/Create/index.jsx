@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import ProductItemContext from "../../../contextAPI/ProductItemContext";
 const Create = () => {
   // Step 1: State initialization
-  const { formData, setFormData ,handleChange } = useContext(ProductItemContext);
+  const { formData, setFormData ,handleChange,handleSubmit } = useContext(ProductItemContext);
 
   const navigate = useNavigate();
   // Step 2: Handle change in input fields
@@ -14,7 +14,8 @@ const Create = () => {
   const onsummit = (e) => {
     e.preventDefault();
     console.log(formData);
-    // handleSubmit();
+    handleSubmit()
+ 
     navigate("/invoice/list"); // Log the current form data to console
   };
 
@@ -29,6 +30,16 @@ const Create = () => {
       </div>
       <div className="p-4">
         <form action="" onSubmit={onsummit}>
+        <div className="flex flex-col mb-4">
+            <span className="p-2">Invioce id</span>
+            <input
+              className="h-[7vh] rounded-lg border-2 border-[#D8DFE7] outline-none"
+              type="text"
+              name="id"
+              value={formData.id}
+              onChange={handleChange}
+            />
+          </div>
           <div className="flex flex-col mb-4">
             <span className="p-2">Sender Name</span>
             <input
@@ -50,22 +61,22 @@ const Create = () => {
             ></textarea>
           </div>
           <div className="flex flex-col mb-4">
-            <span className="p-2">Phone Number</span>
+            <span className="p-2">Total</span>
             <input
               className="h-[7vh] rounded-lg border-2 border-[#D8DFE7] outline-none"
               type="number"
               name="phoneNumber"
-              value={formData.phoneNumber}
+              value={formData.total}
               onChange={handleChange}
             />
           </div>
           <div className="flex flex-col mb-4">
-            <span className="p-2">Invoice Number</span>
+            <span className="p-2"> paymentmeathod</span>
             <input
               className="h-[7vh] rounded-lg border-2 border-[#D8DFE7] outline-none"
               type="text"
               name="invoiceNumber"
-              value={formData.invoiceNumber}
+              value={formData.paymentmeathod}
               onChange={handleChange}
             />
           </div>
@@ -94,7 +105,7 @@ const Create = () => {
           </div>
 
           <hr />
-          <h1 className="p-4 text-[50px]">Issue Form</h1>
+          <h1 className="p-4 text-[50px]">Issue Fory</h1>
 
           <div className="flex flex-col gap-2 mb-3">
             <input

@@ -2,8 +2,10 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import ProductGrid from '../ProductGrid';
+import { useContext } from 'react';
+import ProductItemContext from '../../contextAPI/ProductItemContext';
 const AllProductGrid = () => {
-
+  //  const {ProductGridDealete} = ProductItemContext();
     const navigate = useNavigate();
 
     const g = () => {

@@ -1,5 +1,6 @@
 import React from 'react';
 // import ProductForm from '../ProductForm';
+import MyLineChart from '../MyLineChart';
 import CreateList from '../Invoices/CreateList';
 const Dashbord = () => {
 
@@ -464,6 +465,7 @@ const Dashbord = () => {
         </tbody>
       </table>
     </div>
+     <MyLineChart/>
 
     </div>
   );
